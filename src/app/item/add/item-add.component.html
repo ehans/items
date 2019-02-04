@@ -1,0 +1,42 @@
+<div class="ui-g ui-fluid">
+    <div class="ui-g-12 ui-md-4">
+        <div class="ui-inputgroup">
+            <input type="text" pInputText placeholder="Nome do item" [(ngModel)]='item.name'>
+        </div>
+    </div>
+    <div class="ui-g-12 ui-md-4">
+        <div class="ui-inputgroup">
+            <input type="text" pInputText placeholder="Unidade de medida" [(ngModel)]='item.unitMeasurement'>
+        </div>
+    </div>
+    <div class="ui-g-12 ui-md-4">
+        <div class="ui-inputgroup">
+            <input type="number" pInputText placeholder="Quantidade" [(ngModel)]='item.quantity'>
+        </div>
+    </div>
+    <div class="ui-g-12 ui-md-4">
+        <div class="ui-inputgroup">
+            <input type="number" pInputText placeholder="Preço" [(ngModel)]='item.price'>
+        </div>
+    </div>
+    <div class="ui-g-12 ui-md-4">
+        <div class="ui-g-12">
+            <p-checkbox [(ngModel)]='item.perishable' binary="true" label="Produto perecível"></p-checkbox>
+        </div>
+    </div>
+    <div class="ui-g-12 ui-md-4">
+        <div class="ui-inputgroup">
+            <input type="date" pInputText placeholder="Data de validade" [(ngModel)]='item.expirationDate'>
+        </div>
+    </div>
+    <div class="ui-g-12 ui-md-4">
+        <div class="ui-inputgroup">
+            <input type="date" pInputText placeholder="Data de fabricação" [(ngModel)]='item.dateManufacture'>
+        </div>
+    </div>
+    <div class="ui-g-12 ui-md-4">
+        <div class="ui-inputgroup">
+            <button pButton (click)='save()' label='Salvar'></button>
+        </div>
+    </div>
+</div>
